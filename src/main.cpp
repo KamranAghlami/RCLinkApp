@@ -39,7 +39,7 @@ EM_BOOL gamepad_callback(int eventType, const EmscriptenGamepadEvent *e, void *u
             printf("Button %d: Digital: %d, Analog: %g\n", i, e->digitalButton[i], e->analogButton[i]);
     }
 
-    return 0;
+    return EM_TRUE;
 }
 
 EmscriptenGamepadEvent prevState[32];
@@ -87,8 +87,8 @@ void mainloop()
 
 int main()
 {
-    emscripten_set_gamepadconnected_callback(0, 1, gamepad_callback);
-    emscripten_set_gamepaddisconnected_callback(0, 1, gamepad_callback);
+    emscripten_set_gamepadconnected_callback(nullptr, EM_TRUE, gamepad_callback);
+    emscripten_set_gamepaddisconnected_callback(nullptr, EM_TRUE, gamepad_callback);
 
     emscripten_set_main_loop(mainloop, 60, 0);
 
