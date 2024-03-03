@@ -17,8 +17,6 @@ public:
 protected:
     virtual void update(float timestep) = 0;
 
-    bool m_is_running;
-
 private:
     static application *s_instance;
 

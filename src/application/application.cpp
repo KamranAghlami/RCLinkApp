@@ -8,13 +8,13 @@
 
 application *application::s_instance = nullptr;
 
-application::application() : m_is_running(true)
+application::application()
 {
     assert(s_instance == nullptr);
 
     s_instance = this;
 
-    auto on_update = [](double time, void *user_data) -> EM_BOOL
+    auto on_update = [](double time, void *user_data)
     {
         static const auto app = static_cast<application *>(user_data);
 
@@ -26,7 +26,7 @@ application::application() : m_is_running(true)
 
         app->update(timestep);
 
-        return app->m_is_running;
+        return EM_TRUE;
     };
 
     emscripten_request_animation_frame_loop(on_update, this);
