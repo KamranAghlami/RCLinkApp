@@ -1,7 +1,6 @@
 #include "application/application.h"
 
 #include <assert.h>
-#include <iostream>
 
 #include <emscripten.h>
 #include <emscripten/html5.h>
