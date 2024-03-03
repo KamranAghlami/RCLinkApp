@@ -14,8 +14,6 @@ public:
     application &operator=(const application &) = delete;
     application &operator=(application &&) = delete;
 
-    bool is_running() { return m_is_running; };
-
 protected:
     virtual void update(float timestep) = 0;
 
@@ -23,6 +21,8 @@ protected:
 
 private:
     static application *s_instance;
+
+    int64_t m_previous_timestamp = 0;
 };
 
 std::unique_ptr<application> create_application();

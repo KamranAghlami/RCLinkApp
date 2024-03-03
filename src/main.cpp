@@ -1,5 +1,3 @@
-#include <emscripten.h>
-
 #include "application/application.h"
 
 int main()
