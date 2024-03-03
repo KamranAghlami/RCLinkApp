@@ -17,7 +17,7 @@ application::application()
     {
         static const auto app = static_cast<application *>(user_data);
 
-        auto timestep = time - app->m_previous_timestamp;
+        float timestep = time - app->m_previous_timestamp;
         app->m_previous_timestamp = time;
 
         if (timestep < 0.0f)

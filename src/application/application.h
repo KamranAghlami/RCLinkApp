@@ -20,7 +20,7 @@ protected:
 private:
     static application *s_instance;
 
-    int64_t m_previous_timestamp = 0;
+    float m_previous_timestamp = 0;
 };
 
 std::unique_ptr<application> create_application();
