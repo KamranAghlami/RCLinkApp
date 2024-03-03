@@ -2,7 +2,6 @@
 
 #include <assert.h>
 
-#include <emscripten.h>
 #include <emscripten/html5.h>
 
 application *application::s_instance = nullptr;
