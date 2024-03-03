@@ -1,13 +1,7 @@
-/*
- * Copyright 2014 The Emscripten Authors.  All rights reserved.
- * Emscripten is available under two separate licenses, the MIT license and the
- * University of Illinois/NCSA Open Source License.  Both these licenses can be
- * found in the LICENSE file.
- */
+#include <iostream>
+#include <string>
 
-#include <stdio.h>
 #include <emscripten.h>
-#include <string.h>
 #include <emscripten/html5.h>
 
 static inline const char *emscripten_event_type_to_string(int eventType)
@@ -90,7 +84,7 @@ int main()
     emscripten_set_gamepadconnected_callback(nullptr, EM_TRUE, gamepad_callback);
     emscripten_set_gamepaddisconnected_callback(nullptr, EM_TRUE, gamepad_callback);
 
-    emscripten_set_main_loop(mainloop, 60, 0);
+    emscripten_set_main_loop(mainloop, 100, 0);
 
     return 0;
 }
