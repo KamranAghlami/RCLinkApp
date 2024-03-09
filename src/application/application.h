@@ -3,6 +3,7 @@
 #include <cstdint>
 #include <memory>
 
+#include "gamepad_manager.h"
 class application
 {
 public:
@@ -21,6 +22,8 @@ private:
     static application *s_instance;
 
     float m_previous_timestamp = 0;
+
+    gamepad_manager m_gamepad_manager;
 };
 
 std::unique_ptr<application> create_application();

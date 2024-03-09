@@ -16,6 +16,8 @@ application::application()
     {
         static const auto app = static_cast<application *>(user_data);
 
+        app->m_gamepad_manager.poll();
+
         float timestep = time - app->m_previous_timestamp;
         app->m_previous_timestamp = time;
 
