@@ -31,6 +31,7 @@
         fitAddon.fit();
 
         window.addEventListener('resize', () => fitAddon.fit());
+        window.addEventListener('orientationchange', () => fitAddon.fit());
 
         console.clear = () => terminal.clear();
         console.log = (...args) => terminal.writeln(args.join(' '));
