@@ -1,5 +1,5 @@
 # RCLinkApp
-This is the WebAssembly running behind the [RCLink](https://github.com/KamranAghlami/RCLink) project.
+This is the WebAssembly running behind the [RCLink](https://github.com/KamranAghlami/RCLink).
 ### Build
 In order to build the project using VSCode add this to your _`settings.json`_ file.
 ``` json
@@ -28,4 +28,4 @@ Then go to the DevTools settings, and enable the following option:
 ```
 Allow DevTools to load resources, such as source maps, from remote file paths. Disabled by default for security reasons.
 ```
-Reloaded the DevTools and sources now should be found.
+Reloade the DevTools and sources now should be found.
