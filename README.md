@@ -1,5 +1,5 @@
 # RCLinkApp
-
+This is the WebAssembly running behind the [RCLink](https://github.com/KamranAghlami/RCLink) project.
 ### Build
 In order to build the project using VSCode add this to your _`settings.json`_ file.
 ``` json
