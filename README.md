@@ -10,9 +10,12 @@ In order to build the project using VSCode add this to your _`settings.json`_ fi
 }
 ```
 ### Debug
-In order to debug the project using Chrome, install the `C/C++ DevTools Support (DWARF)` extension.
-#### Debugging when building with WSL2
- The extension tries to open files locally, this is problematic when using WSL2, I fixed it by adding the following as path substitutions in the extension's options: (pay attention to the order and adjust to your emsdk installation directory.)
+#### Debugging inside VSCode
+In order to debug the project inside VSCode, install the [WebAssembly DWARF Debugging](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wasm-dwarf-debugging) extension, open `index.html` using [Live Preview]() extension, and then use `Debug: Open Link` command.
+#### Debugging with Chrome
+In order to debug the project using Chrome DevTools, install the [C/C++ DevTools Support (DWARF)](https://chromewebstore.google.com/detail/cc++-devtools-support-dwa/pdcpmagijalfljmkmjngeonclgbbannb) extension.
+##### Note about WSL2
+The extension tries to open files locally, this is problematic when using WSL2, I fixed it by adding the following as path substitutions in the extension's options: (pay attention to the order and adjust to your emsdk installation directory.)
 
 ```
 "/b/s/w/ir/x/w/install" -> "//wsl.localhost/Ubuntu/path/to/your/emsdk/upstream"
