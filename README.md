@@ -11,7 +11,7 @@ In order to build the project using VSCode add this to your _`settings.json`_ fi
 ```
 ### Debug
 #### Debugging inside VSCode
-In order to debug the project inside VSCode, install the [WebAssembly DWARF Debugging](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wasm-dwarf-debugging) extension, open `index.html` using [Live Preview]() extension, and then use `Debug: Open Link` command.
+In order to debug the project inside VSCode, install the [WebAssembly DWARF Debugging](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wasm-dwarf-debugging) extension, open `index.html` using [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) extension, and then use `Debug: Open Link` command.
 #### Debugging with Chrome
 In order to debug the project using Chrome DevTools, install the [C/C++ DevTools Support (DWARF)](https://chromewebstore.google.com/detail/cc++-devtools-support-dwa/pdcpmagijalfljmkmjngeonclgbbannb) extension.
 ##### Note about WSL2
