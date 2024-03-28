@@ -28,4 +28,4 @@ Then go to the DevTools settings, and enable the following option:
 ```
 Allow DevTools to load resources, such as source maps, from remote file paths. Disabled by default for security reasons.
 ```
-Reloade the DevTools and sources now should be found.
+Reload the DevTools and sources now should be found.
